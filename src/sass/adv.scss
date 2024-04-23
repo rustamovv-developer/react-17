@@ -1,0 +1,32 @@
+.adv {
+  padding: 12px 0px;
+  background-color: #000000;
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fafafa;
+  }
+  &__text {
+    text-decoration: underline;
+    color: #fafafa;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,45 @@
+.products {
+  padding-bottom: 71px;
+  &__info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__card {
+    width: 260px;
+    position: relative;
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 16px;
+    height: 180px;
+    object-fit: contain;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__text {
+    color: #db4444;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__abs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}

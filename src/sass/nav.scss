@@ -1,0 +1,45 @@
+.nav {
+  padding: 25px 0px;
+  border-bottom: 0.1px solid #dfdfdf;
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    &.active {
+      text-decoration: underline;
+    }
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+}
+sup {
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
