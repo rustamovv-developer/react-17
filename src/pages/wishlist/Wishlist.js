@@ -4,6 +4,9 @@ import Products from "../../components/products/Products";
 import img from "../../assets/images/empty.jpg";
 
 function Wishlist() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const wishes = useSelector((state) => state.wishlist.value);
   console.log(wishes);
   return (

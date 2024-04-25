@@ -6,6 +6,7 @@ import "../../sass/products.scss";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleToWishes } from "../../context/wishlistSlice";
+import { addToCart } from "../../context/cartSlice";
 
 function Products({ data }) {
   const dispatch = useDispatch();
@@ -34,7 +35,9 @@ function Products({ data }) {
         <p className="products__text">{el.price}</p>
         <img src={stars} alt="stars" className="products__stars" />
       </div>
-      <button className="products__btn">Add To Cart</button>
+      <button onClick={() => dispatch(addToCart(el))} className="products__btn">
+        Add To Cart
+      </button>
     </div>
   ));
   return (

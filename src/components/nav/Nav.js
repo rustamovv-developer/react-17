@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 
 function Nav() {
   const wishes = useSelector((state) => state.wishlist.value);
+  const cart = useSelector((state) => state.cart.value);
   return (
     <nav className="nav">
       <div className="container">
@@ -50,10 +51,11 @@ function Nav() {
               <IoHeartOutline style={{ color: "#000000", fontSize: "24px" }} />{" "}
               <sup>{wishes.length}</sup>
             </Link>
-            <Link to={"/"}>
+            <Link to={"/cart"}>
               <RiShoppingCartLine
                 style={{ color: "#000000", fontSize: "24px" }}
               />
+              <sup>{cart.length}</sup>
             </Link>
           </div>
         </div>
